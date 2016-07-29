@@ -103,6 +103,7 @@
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     [self drawArc:ctx];
+    
 }
 
 - (NSMutableAttributedString *)setStringWithDifferentFont:(NSString *)string {
