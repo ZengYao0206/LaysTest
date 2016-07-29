@@ -105,7 +105,6 @@
     [self drawArc:ctx];
 }
 
-
 - (NSMutableAttributedString *)setStringWithDifferentFont:(NSString *)string {
     
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:string];
