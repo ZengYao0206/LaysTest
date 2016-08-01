@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BB1E335FB39D481BD4C02E2 /* libPods-GraphicsTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C30D44D3F1027F42783AA2CA /* libPods-GraphicsTest.a */; };
 		AC63294B1D48AA70000B56C0 /* InvestCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6329491D48AA70000B56C0 /* InvestCircleView.m */; };
 		AC63294E1D48AD37000B56C0 /* UIColor+YW.m in Sources */ = {isa = PBXBuildFile; fileRef = AC63294D1D48AD37000B56C0 /* UIColor+YW.m */; };
 		AC6329511D48C2C4000B56C0 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6329501D48C2C4000B56C0 /* CircleViewController.m */; };
@@ -65,12 +66,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62BC8ACCF9C5B99AE0AE956A /* Pods-GraphicsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphicsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GraphicsTest/Pods-GraphicsTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AC6329491D48AA70000B56C0 /* InvestCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestCircleView.m; sourceTree = "<group>"; };
 		AC63294A1D48AA70000B56C0 /* InvestCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestCircleView.h; sourceTree = "<group>"; };
 		AC63294C1D48AD37000B56C0 /* UIColor+YW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YW.h"; sourceTree = "<group>"; };
 		AC63294D1D48AD37000B56C0 /* UIColor+YW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YW.m"; sourceTree = "<group>"; };
 		AC63294F1D48C2C4000B56C0 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
 		AC6329501D48C2C4000B56C0 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		C30D44D3F1027F42783AA2CA /* libPods-GraphicsTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GraphicsTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8CF79A022E05DAF26BBB6BD /* Pods-GraphicsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphicsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GraphicsTest/Pods-GraphicsTest.release.xcconfig"; sourceTree = "<group>"; };
 		DBDFCBD11BD61096004D08A6 /* GraphicsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphicsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBDFCBD51BD61096004D08A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBDFCBD71BD61096004D08A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB1E335FB39D481BD4C02E2 /* libPods-GraphicsTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +146,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8383CE1370CBCD5862069DF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BC8ACCF9C5B99AE0AE956A /* Pods-GraphicsTest.debug.xcconfig */,
+				D8CF79A022E05DAF26BBB6BD /* Pods-GraphicsTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9CBF5F2920254B5EC145E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C30D44D3F1027F42783AA2CA /* libPods-GraphicsTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBDFCBC81BD61096004D08A6 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +170,8 @@
 				DBDFCBED1BD61096004D08A6 /* GraphicsTestTests */,
 				DBDFCBF81BD61096004D08A6 /* GraphicsTestUITests */,
 				DBDFCBD21BD61096004D08A6 /* Products */,
+				8383CE1370CBCD5862069DF8 /* Pods */,
+				C9CBF5F2920254B5EC145E26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,9 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBDFCBFE1BD61096004D08A6 /* Build configuration list for PBXNativeTarget "GraphicsTest" */;
 			buildPhases = (
+				3DC6AF3AEAEB1C573C6F3619 /* [CP] Check Pods Manifest.lock */,
 				DBDFCBCD1BD61096004D08A6 /* Sources */,
 				DBDFCBCE1BD61096004D08A6 /* Frameworks */,
 				DBDFCBCF1BD61096004D08A6 /* Resources */,
+				E9EAF7FA2DF31BD7C6700D88 /* [CP] Embed Pods Frameworks */,
+				3F28DAC2E355CAA22216ED18 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -383,6 +410,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DC6AF3AEAEB1C573C6F3619 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F28DAC2E355CAA22216ED18 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraphicsTest/Pods-GraphicsTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9EAF7FA2DF31BD7C6700D88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GraphicsTest/Pods-GraphicsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBDFCBCD1BD61096004D08A6 /* Sources */ = {
@@ -556,6 +631,7 @@
 		};
 		DBDFCBFF1BD61096004D08A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BC8ACCF9C5B99AE0AE956A /* Pods-GraphicsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangdong No.1 Pharmacy Chain Co., Ltd. (2K758V73RH)";
@@ -568,6 +644,7 @@
 		};
 		DBDFCC001BD61096004D08A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CF79A022E05DAF26BBB6BD /* Pods-GraphicsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Guangdong No.1 Pharmacy Chain Co., Ltd. (2K758V73RH)";
